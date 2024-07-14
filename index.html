@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6125cc4e6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Introducción a JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="products">
+            <img src="./assets/img/Laptop.jpg" alt="Laptop">
+            <h1>Laptop Gamer AMD</h1>
+            <p>Precio base: $40.000</p>
+            <div class="price-list">
+                <p id="price-price">0</p>
+                <i class="fa-solid fa-minus icon-price-list" onclick="resta()"></i>
+                <i class="fa-solid fa-plus icon-price-list" onclick="suma()"></i>
+            </div>
+            <p>Personaliza tu Producto: </p>
+            <select id="colorSelector">
+                <option value="Gris">Gris</option>
+                <option value="Azul">Azul</option>
+                <option value="Negro">Negro</option>
+                <option value="Verde">Verde</option>
+            </select>
+        </section>
+        <section class="results">
+            <h2>Total a pagar: $<span id="totalPrice">0</span></h2>
+            <div>
+                <p>Color: <span id="selectedColor"></span></p>
+                <button class="btn" onclick="agregarProducto()">Calcular</button>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
